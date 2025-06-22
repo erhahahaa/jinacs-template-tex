@@ -1,23 +1,7 @@
 \documentclass[10pt,twocolumn]{article}
 \input{config/packages}
 \input{config/formatting}
-
-% Font size definitions
-\newcommand{\eightp}{\fontsize{8}{9.6}\selectfont}
-\newcommand{\ninep}{\fontsize{9}{10.8}\selectfont}
-\newcommand{\tenp}{\fontsize{10}{12}\selectfont}
-\newcommand{\elevenp}{\fontsize{11}{13.2}\selectfont}
-\newcommand{\twentyp}{\fontsize{20}{24}\selectfont}
-
-% Redefine abstract environment
-\renewenvironment{abstract}%
-{\noindent\textbf{\ninep Abstrak}--- }\MakeLowercase{%}
-{\par\vspace{0.5em}}
-
-% Keywords environment
-\newenvironment{keywords}%
-{\noindent\textbf{\ninep Kata Kunci}--- }%
-{\par\vspace{1em}}
+\input{config/commands}
 
 \begin{document}
 
