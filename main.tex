@@ -1,5 +1,6 @@
 \documentclass[10pt,twocolumn]{article}
 \input{config/packages}
+\input{config/formatting}
 
 % Font size definitions
 \newcommand{\eightp}{\fontsize{8}{9.6}\selectfont}
@@ -7,14 +8,6 @@
 \newcommand{\tenp}{\fontsize{10}{12}\selectfont}
 \newcommand{\elevenp}{\fontsize{11}{13.2}\selectfont}
 \newcommand{\twentyp}{\fontsize{20}{24}\selectfont}
-
-% Title formatting
-\titleformat{\section}[block]{\normalfont\tenp\centering\MakeUppercase}{\Roman{section}.}{0.5em}{}
-\titleformat{\subsection}[block]{\normalfont\tenp\itshape}{\Alph{subsection}.}{0.5em}{}
-\titleformat{\subsubsection}[runin]{\normalfont\tenp\itshape}{\arabic{subsubsection})}{0.5em}{}[:]
-
-% Remove page numbers, headers, and footers
-\pagestyle{empty}
 
 % Redefine abstract environment
 \renewenvironment{abstract}%
@@ -25,10 +18,6 @@
 \newenvironment{keywords}%
 {\noindent\textbf{\ninep Kata Kunci}--- }%
 {\par\vspace{1em}}
-
-% HyperRef conf
-\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
-\urlstyle{rm}
 
 \begin{document}
 

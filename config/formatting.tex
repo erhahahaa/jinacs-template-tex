@@ -1,0 +1,15 @@
+% Title formatting
+\titleformat{\section}[block]{\normalfont\tenp\centering\MakeUppercase}{\Roman{section}.}{0.5em}{}
+\titleformat{\subsection}[block]{\normalfont\tenp\itshape}{\Alph{subsection}.}{0.5em}{}
+\titleformat{\subsubsection}[runin]{\normalfont\tenp\itshape}{\arabic{subsubsection})}{0.5em}{}[:]
+
+% Remove page numbers, headers, and footers
+\pagestyle{empty}
+
+% HyperRef configuration
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+\urlstyle{rm}
