@@ -1,11 +1,13 @@
 \documentclass[10pt,twocolumn]{article}
+
+% Import configuration files
 \input{config/packages}
 \input{config/formatting}
 \input{config/commands}
 
 \begin{document}
 
-% Title
+% Title and authors (single column)
 \twocolumn[
 \begin{@twocolumnfalse}
 \input{content/metadata}
@@ -16,6 +18,7 @@
 % Abstract and keywords
 \input{content/abstract}
 
+% Main content sections
 \input{content/sections/01-pendahuluan}
 \input{content/sections/02-format-halaman}
 \input{content/sections/03-style-halaman}
@@ -28,6 +31,7 @@
 % Acknowledgments
 \input{content/acknowledgments}
 
+% Bibliography
 \bibliographystyle{ieeetr}
 \bibliography{bibliography/references}
 
