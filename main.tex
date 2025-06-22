@@ -1,0 +1,256 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[a4paper,top=19mm,bottom=43mm,left=14.32mm,right=14.32mm,columnsep=4.22mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[indonesian]{babel}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% Font size definitions
+\newcommand{\eightp}{\fontsize{8}{9.6}\selectfont}
+\newcommand{\ninep}{\fontsize{9}{10.8}\selectfont}
+\newcommand{\tenp}{\fontsize{10}{12}\selectfont}
+\newcommand{\elevenp}{\fontsize{11}{13.2}\selectfont}
+\newcommand{\twentyp}{\fontsize{20}{24}\selectfont}
+
+% Title formatting
+\titleformat{\section}[block]{\normalfont\tenp\centering\MakeUppercase}{\Roman{section}.}{0.5em}{}
+\titleformat{\subsection}[block]{\normalfont\tenp\itshape}{\Alph{subsection}.}{0.5em}{}
+\titleformat{\subsubsection}[runin]{\normalfont\tenp\itshape}{\arabic{subsubsection})}{0.5em}{}[:]
+
+% Remove page numbers, headers, and footers
+\pagestyle{empty}
+
+% Redefine abstract environment
+\renewenvironment{abstract}%
+{\noindent\textbf{\ninep Abstrak}--- }\MakeLowercase{%}
+{\par\vspace{0.5em}}
+
+% Keywords environment
+\newenvironment{keywords}%
+{\noindent\textbf{\ninep Kata Kunci}--- }%
+{\par\vspace{1em}}
+
+% HyperRef conf
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\urlstyle{rm}
+
+\begin{document}
+
+% Title
+\twocolumn[
+\begin{@twocolumnfalse}
+\begin{center}
+{\twentyp\textbf{Judul Jurnal : JINACS (Journal of Informatics and Computer Science)}}
+\vspace{1em}
+
+{\elevenp Penulis Pertama$^1$, Penulis Kedua$^2$, Penulis Ketiga$^3$}
+\vspace{0.5em}
+
+{\tenp $^{1,3}$Afiliasi (Jurusan/Program Studi, Universitas)}
+
+{\ninep \href{mailto:penulis.pertama@universitas.ac.id}{$^1$penulis.pertama@universitas.ac.id}}
+
+{\ninep \href{mailto:penulis.ketiga@universitas.ac.id}{$^3$penulis.ketiga@universitas.ac.id}}
+
+{\tenp $^2$Nama Perusahaan, Negara}
+
+{\ninep \href{mailto:penulis.kedua@perusahaan.com}{$^2$penulis.kedua@perusahaan.com}}
+
+\end{center}
+\vspace{1em}
+\end{@twocolumnfalse}
+]
+
+% Abstract
+\begin{abstract}
+Tuliskan Abstract dalam Bahasa Indonesia, dengan jumlah kata sekitar 160-250 kata. Dokumen ini merupakan format panduan bagi penulis untuk mennulis makalah yang siap dipublikasikan dalam jurnal. Dokumen ini disadur dari IEEE template. Para penulis harus mengikuti petunjuk yang diberikan dalam panduan ini. Anda dapat menggunakan dokumen ini baik sebagai petunjuk penulisan dan sebagai template di mana Anda dapat mengetik teks Anda sendiri.
+\end{abstract}
+
+\begin{keywords}
+terdiri minimal 5 kata kunci atau frasa, kata kunci dipisahkan dengan koma.
+\end{keywords}
+
+\section{\MakeUppercase{Pendahuluan}}
+Dokumen ini adalah template. Sebuah salinan elektronik yang dapat diunduh dari situs web JINACS (Journal of Informatics and Computer Science) Jurusan Teknik Informatika, Universitas Negeri Surabaya (UNESA). Untuk pertanyaan atas panduan penulisan, silakan hubungi panitia publikasi jurnal seperti yang tercantum pada situs web.
+
+\section{\MakeUppercase{Format Halaman}}
+Cara paling mudah untuk memenuhi persyaratan format penulisan adalah dengan menggunakan dokumen ini sebagai template. Kemudian ketikkan teks Anda ke dalamnya
+
+\subsection{Format Penulisan}
+Ukuran kertas harus sesuai dengan ukuran A4, yaitu lebar 210 mm (8,27") dan panjang 297 mm (11,69"). Batas margin ditetapkan sebagai berikut:
+\begin{itemize}
+\item Atas = 19 mm (0,75")
+\item Bawah = 43 mm (1,69")
+\item Kiri = Kanan = 14,32 mm (0,56")
+\end{itemize}
+
+Artikel penulisan harus dalam format dua kolom dengan ruang 4.22 mm (0,17") antara kolom.
+
+\begin{table}[h]
+\centering
+\caption{{\eightp\textsc{Ukuran Font untuk Makalah}}}
+\label{tab:font_sizes}
+{\eightp
+\begin{tabular}{|c|p{2.5cm}|p{1.8cm}|p{1.8cm}|}
+\hline
+\textbf{Ukuran Font} & \textbf{Biasa (Reguler)} & \textbf{Tebal (Bold)} & \textbf{Miring (Italic)} \\
+\hline
+8 & Keterangan tabel (dalam small caps), keterangan gambar, item referensi & \textbf{item referensi (parsial)} & \\
+\hline
+9 & Alamat email penulisan (dalam Courier), sel dalam tabel & \textbf{heading Abstrak dan Kata Kunci} & \textit{isi abstrak, heading} \\
+\hline
+10 & Heading level 1 (in Small Caps), paragraph & \textbf{heading level 2, heading level 3, afiliasi penulis} & \\
+\hline
+11 & Nama pengarang & & \\
+\hline
+20 & Judul & & \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+\section{\MakeUppercase{Style Halaman}}
+Paragraf harus teratur. Semua paragraf harus rata, yaitu sama-sama rata kiri dan dan rata kanan.
+
+\subsection{Huruf-huruf Dokumen}
+Seluruh dokumen harus dalam Times New Roman atau Times font. Font tipe 3 tidak boleh digunakan. Jenis font lain dapat digunakan jika diperlukan untuk tujuan khusus.
+
+Fitur ukuran font dapat dilihat pada Tabel \ref{tab:font_sizes}.
+
+\subsection{Judul dan Penulis}
+Judul harus dalam font biasa berukuran 20 pt. Nama pengarang harus dalam font biasa berukuran 11 pt. Jumlah kata judul maksimal 12 kata.
+
+Judul dan pengarang harus dalam format kolom tunggal dan harus terpusat. Setiap awal kata dalam judul harus huruf besar, kecuali untuk kata-kata pendek seperti, "sebuah", "dan", "di", "oleh", "untuk", "dari", "pada", "atau", dan sejenisnya. Penulisan penulis tidak boleh menunjukkan nama jabatan (misalnya Dosen Pembimbing), gelar akademik (misalnya Dr) atau keanggotaan dari setiap organisasi profesional (misalnya Senior Member IEEE).
+
+Agar tidak membingungkan, jika ada nama keluarga maka ditulis di bagian terakhir dari masing-masing nama pengarang (misalnya Agus AK Sumitro). Setiap afiliasi harus dirmasukkan, setidaknya, nama perusahaan dan nama negara tempat penulis (misalnya Prime Education Centre Pty Ltd, INDONESIA). Alamat email dwajibkan bagi penulis yang bersangkutan.
+
+\subsection{Bagian Heading}
+Sebaiknya tidak lebih dari 3 tingkat untuk heading. Semua heading harus dalam font 10pt. Setiap kata dalam suatu heading harus berhuruf besar, kecuali untuk kata-kata pendek seperti yang tercantum dalam Bagian III-B.
+
+\subsubsection{Heading Level1} Heading level 1 harus dalam Small Caps, terletak di tengah-tengah dan menggunakan penomoran angka Romawi huruf besar. Sebagai contoh, lihat heading "III. Style Halaman" dari dokumen ini. Heading level 1 yang tidak boleh menggunakan penomoran adalah "Ucapan Terima Kasih" dan "Referensi".
+
+\subsubsection{Heading Level-2} Heading level 2 harus miring (italic), merapat ke kiri dan dinomori menggunakan abjad huruf besar. Sebagai contoh, lihat heading "C. Bagian heading" di atas.
+
+\subsubsection{Heading Level-3} Heading level-3 harus diberi spasi, miring, dan dinomori dengan angka Arab diikuti dengan tanda kurung kanan. Heading level 3 harus diakhiri dengan titik dua. Isi dari bagian level 3 bersambung mengikuti judul heading dengan paragraf yang sama. Sebagai contoh, bagian ini diawali dengan heading level 3.
+
+\section{\MakeUppercase{Grafik dan Tabel}}
+Grafik dan tabel harus terletak di tengah (centered). Grafik dan tabel yang besar dapat direntangkan pada kedua kolom. Setiap tabel atau gambar yang mencakup lebar lebih dari 1 kolom harus diposisikan di bagian atas atau di bagian bawah halaman.
+
+Grafik diperbolehkan berwarna. Semua warna akan disimpan pada CDROM. Gambar tidak boleh menggunakan pola titik-titik karena ada kemungkinan tidak dapat dicetak sesuai aslinya. Gunakan pewarnaan padat yang kontras baik untuk tampilan di layar komputer, maupun untuk hasil cetak yang berwarna hitam putih, seperti tampak pada Gbr. \ref{fig:contoh_grafik}.
+
+\begin{figure}[h]
+\centering
+% \includegraphics[width=\columnwidth]{gambar1.png}
+\rule{\columnwidth}{3cm} % Placeholder untuk gambar
+\caption{\eightp Contoh grafik garis menggunakan warna yang kontras baik di layar komputer, maupun dalam hasil cetak hitam-putih.}
+\label{fig:contoh_grafik}
+\end{figure}
+
+Harap periksa semua gambar dalam jurnal Anda, baik di layar, maupun hasil versi cetak. Ketika memeriksa gambar versi cetak, pastikan bahwa:
+\begin{itemize}
+\item warna mempunyai kontras yang cukup,
+\item gambar cukup jelas,
+\item semua label pada gambar dapat dibaca.
+\end{itemize}
+
+\subsection{Keterangan Gambar}
+Gambar diberi nomor dengan menggunakan angka Arab. Keterangan gambar harus dalam font biasa ukuran 8 pt. Keterangan gambar dalam satu baris diletakkan di tengah (centered), sedangkan keterangan multi-baris harus dirata kiri dan kanan. Keterangan gambar dengan nomor gambar harus ditempatkan setelah gambar terkait, seperti yang ditunjukkan pada Gbr. \ref{fig:contoh_grafik}.
+
+\subsection{Keterangan Tabel}
+Tabel diberi nomor menggunakan angka romawi huruf besar. Keterangan tabel di tengah (centered) dan dalam font biasa berukuran 8 pt dengan huruf kapital kecil (smallcaps). Setiap awal kata dalam keterangan tabel menggunakan huruf kapital, kecuali untuk kata-kata pendek seperti yang tercantum pada bagian III-B. Keterangan angka tabel ditempatkan sebelum tabel terkait, seperti yang ditunjukkan pada Tabel \ref{tab:font_sizes}.
+
+\subsection{Nomor Halaman, Header dan Footer}
+Nomor halaman, header dan footer tidak dipakai.
+
+\section{\MakeUppercase{Links dan Bookmark}}
+Semua hypertext link dan bagian bookmark akan dihapus. Jika paper perlu merujuk ke alamat email atau URL di artikel, alamat atau URL lengkap harus diketik dengan font biasa.
+
+\section{\MakeUppercase{Penulisan Persamaan}}
+Persamaan secara berurutan diikuti dengan penomoran angka dalam tanda kurung dengan margin rata kanan, seperti dalam (\ref{eq:example}). Gunakan equation editor untuk membuat persamaan. Beri spasi tab dan tulis nomor persamaan dalam tanda kurung. Untuk membuat persamaan Anda lebih rapat, gunakan tanda garis miring ( / ), fungsi pangkat, atau pangkat yang tepat. Gunakan tanda kurung untuk menghindari kerancuan dalam pemberian angka pecahan. Jelaskan persamaan saat berada dalam bagian dari kalimat, seperti berikut
+
+\begin{equation}
+\int_0^{r^2} F(r,\phi) \, dr \, d\phi = [\sigma r^2/(2\mu_0)] \cdot \int_0^{\infty} \exp(-\lambda|z_j - z_i|) \lambda^{-1} J_1(\lambda r^2) J_0(\lambda r_i) \, d\lambda
+\label{eq:example}
+\end{equation}
+
+Pastikan bahwa simbol-simbol di dalam persamaan telah didefinisikan sebelum persamaan atau langsung mengikuti setelah persamaan muncul. Simbol diketik dengan huruf miring ($T$ mengacu pada suhu, tetapi T merupakan satuan Tesla). Mengacu pada "(\ref{eq:example})", bukan "Pers. (\ref{eq:example})" atau "persamaan (\ref{eq:example})", kecuali pada awal kalimat: "Persamaan (\ref{eq:example}) merupakan ...".
+
+\section{\MakeUppercase{Referensi}}
+Judul pada bagian Referensi tidak boleh bernomor. Semua item referensi berukuran font 8 pt. Silakan gunakan gaya tulisan miring dan biasa untuk membedakan berbagai perbedaan dasar seperti yang ditunjukkan pada bagian Referensi. Penomoran item referensi diketik berurutan dalam tanda kurung siku (misalnya [1]).
+
+Ketika Anda mengacu pada item referensi, silakan menggunakan nomor referensi saja, misalnya \cite{metev1998}. Jangan menggunakan "Ref. \cite{breckling1989}" atau "Referensi \cite{zhang1999}", kecuali pada awal kalimat, misalnya "Referensi \cite{zhang1999} menunjukkan bahwa ...". Dalam penggunaan beberapa referensi masing-masing nomor diketik dengan kurung terpisah (misalnya \cite{metev1998}, \cite{breckling1989}, \cite{zhang1999}--\cite{shell2002}). Beberapa contoh item referensi dengan kategori yang berbeda ditampilkan pada bagian Referensi yang meliputi:
+\begin{itemize}
+\item contoh buku pada \cite{metev1998}
+\item contoh seri buku dalam \cite{breckling1989}
+\item contoh artikel jurnal di \cite{zhang1999}
+\item contoh paper seminar di \cite{wegmuller2000}
+\item contoh paten dalam \cite{sorace1997}
+\item contoh website di \cite{ieee2002}
+\item contoh dari suatu halaman web di \cite{shell2002}
+\item contoh manual databook dalam \cite{flexchip1996}
+\item contoh datasheet dalam \cite{pdca1999}
+\item contoh tesis master di \cite{karnik1999}
+\item contoh laporan teknis dalam \cite{padhye1999}
+\item contoh standar dalam \cite{ieee8021997}
+\end{itemize}
+
+\section{\MakeUppercase{Kesimpulan}}
+Template ini adalah versi ke-empat. Sebagian besar petunjuk format di dokumen ini disadur dari template untuk artikel IEEE.
+
+\section*{Ucapan Terima Kasih}
+Judul untuk ucapan terima kasih dan referensi tidak diberi nomor. Terima kasih disampaikan kepada Tim JIEET yang telah meluangkan waktu untuk membuat template ini.
+
+\bibliographystyle{ieeetr}
+\begin{thebibliography}{99}
+\eightp
+\bibitem{metev1998}
+Muhammad Metev \& Pardjiyo Veiko, \textit{Laser Assisted Microtechnology}, 2nd ed., R. M. Osgood, Jr., Ed. Berlin, Germany: Springer-Verlag, 1998.
+
+\bibitem{breckling1989}
+J. Breckling, Ed., \textit{The Analysis of Directional Time Series: Applications to Wind Speed and Direction}, ser. Lecture Notes in Statistics. Berlin, Germany: Springer, 1989, vol. 61.
+
+\bibitem{zhang1999}
+S. Zhang, C. Zhu, J. K. O. Sin, dan P. K. T. Mok, "A novel ultrathin elevated channel low-temperature poly-Si TFT," \textit{IEEE Electron Device Lett.}, vol. 20, hal. 569--571, Nov. 1999.
+
+\bibitem{wegmuller2000}
+M. Wegmuller, J. P. von der Weid, P. Oberson, dan N. Gisin, "Highresolution fiber distributed measurements with coherent OFDR," \textit{Proc. ECOC'00}, 2000, paper 11.3.4, hal. 109.
+
+\bibitem{sorace1997}
+R. E. Sorace, V. S. Reinhardt, and S. A. Vaughn, "High-speed digital-to-RF converter," U.S. Patent 5 668 842, Sept. 16, 1997.
+
+\bibitem{ieee2002}
+(2002) The IEEE website. [Online], \url{http://www.ieee.org/}, tanggal akses: 16 September 2014.
+
+\bibitem{shell2002}
+Michael Shell. (2002) IEEEtran homepage on CTAN. [Online], \url{http://www.ctan.org/tex-archive/macros/latex/contrib/supported/IEEEtran/}, tanggal akses: 16 September 2014.
+
+\bibitem{flexchip1996}
+FLEXChip Signal Processor (MC68175/D), Motorola, 1996.
+
+\bibitem{pdca1999}
+"PDCA12-70 data sheet," Opto Speed SA, Mezzovico, Switzerland.
+
+\bibitem{karnik1999}
+A. Karnik, "Performance of TCP congestion control with rate feedback:TCP/ABR and rate adaptive TCP/IP," M. Eng. thesis, Indian Institute of Science, Bangalore, India, Jan. 1999.
+
+\bibitem{padhye1999}
+J. Padhye, V. Firoiu, and D. Towsley, "A stochastic model of TCP Renocongestion avoidance and control," Univ. of Massachusetts, Amherst, MA, CMPSCI Tech. hal. 99-02, 1999.
+
+\bibitem{ieee8021997}
+Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specification, IEEE Std. 802.11, 1997.
+
+\end{thebibliography}
+
+
+\end{document}
